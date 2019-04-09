@@ -42,6 +42,10 @@ class Login
 
     public static function Logged(){
         //verifica se está logado
+        if(!isset($_SESSION['login'])){
+            header('Location:index.php');
+        }
+
     }
 
     public static function Loggout(){
