@@ -18,7 +18,6 @@
         if(Login::validateLogin($username,$password)){
            //faço a requisição para validar login pelo metodo 
            //se true libera se nao avisa
-            Login::Logged(true);
             $_SESSION['login'] = true;
             $_SESSION['user'] = $username;
             $_SESSION['password'] = $password;
