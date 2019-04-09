@@ -37,7 +37,17 @@ class Login
             return false;
             //se não return false
         }*/
-        return true;
+    }
+
+    public static function Logged(){
+        //verifica se está logado
+    }
+
+    public static function Close(){
+        //deslogar
+        session_unset();
+        session_destroy;
+        header('Location:',index.php);
     }
 
     public function __toString()
