@@ -1,7 +1,7 @@
 <?php
-session_start();
+include('config.php');
 echo "logado com sucesso!";
-echo $_SESSION['login'];
+echo $_SESSION['user'];
 
 if(isset($_GET['loggout'])){
     Login::Loggout();

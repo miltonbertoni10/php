@@ -29,7 +29,7 @@ class Login
         return $this->senha;
     }
 
-    public static function validadeLogin($username,$password){
+    public static function validateLogin($username,$password){
         /*if(true){
             //se existir usuario return true
             return true;
@@ -37,17 +37,18 @@ class Login
             return false;
             //se não return false
         }*/
+        return true;
     }
 
     public static function Logged(){
         //verifica se está logado
     }
 
-    public static function Close(){
+    public static function Loggout(){
         //deslogar
         session_unset();
         session_destroy;
-        header('Location:',index.php);
+        header('Location:index.php');
     }
 
     public function __toString()
