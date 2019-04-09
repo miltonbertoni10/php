@@ -29,32 +29,15 @@ class Login
         return $this->senha;
     }
 
-    public function loadById(){
-
-    }
-
-    public function search(){
-
-    }
-
-    public static function getLista(){
-        
-    }
-
-    public function select(){
-
-    }
-
-    public function insert(){
-
-    }
-
-    public function delete(){
-
-    }
-
-    public function update(){
-
+    public static function validadeLogin($username,$password){
+        /*if(true){
+            //se existir usuario return true
+            return true;
+        }else {
+            return false;
+            //se não return false
+        }*/
+        return true;
     }
 
     public function __toString()
