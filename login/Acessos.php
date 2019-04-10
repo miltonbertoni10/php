@@ -25,7 +25,7 @@ class Acessos
     }
     //move o arquivo para uma pasta especifica
     public static function uploadFile($file){
-        if(move_uploaded_file($file,__DIR__.'uploads/' . $file['name'])){
+        if(move_uploaded_file($file,UPLOADFILE . $file['name'])){
             return $file['name'];
         }else{
             return false;
